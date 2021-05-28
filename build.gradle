@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version "$springBoot" apply true
+    id 'io.spring.dependency-management' version "$dependencyManagement" apply true
+}
+
+description = 'JoBits POS REST'
+
+subprojects{
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+
+    
+    repositories {
+        maven {url = jobitsRepoReadUrl}
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+        implementation 'com.root101.clean:com.root101.clean.core:2.1.3'
+        implementation project(':Commons')
+
+    }
+
+}
+
+
