@@ -20,7 +20,6 @@ subprojects{
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-hateoas'
         implementation 'com.root101.clean:com.root101.clean.core:2.1.3'
-        implementation project(':Commons')
 
     }
 
