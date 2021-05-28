@@ -1,0 +1,20 @@
+group = 'com.jobits.pos.core.client.tennant'
+version = '0.0.1'
+description = 'JoBits POS REST:Tennant'
+
+
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+
+dependencies {
+    implementation project(':Commons')
+}
+
+
