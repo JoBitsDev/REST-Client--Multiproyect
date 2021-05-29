@@ -4,6 +4,7 @@ include 'CoreRestClient'
 include 'Application'
 include 'ReservaRestClient'
 include 'Commons'
+include 'Tennant'
 
 
 
