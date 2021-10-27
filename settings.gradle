@@ -1,9 +1,15 @@
 rootProject.name = 'JoBits-POS-REST'
 
-include 'CoreRestClient'
-include 'Application'
-include 'ReservaRestClient'
-include 'Commons'
+include ':CoreRestClient'
+include ':Application'
+include ':ReservaRestClient'
+include ':ClienteRestClient'
+include ':Commons'
+include ':Tennant'
 
-
-
+project(':CoreRestClient').projectDir = "$rootDir/modulos/CoreRestClient" as File
+project(':Application').projectDir = "$rootDir/modulos/Application" as File
+project(':ReservaRestClient').projectDir = "$rootDir/modulos/ReservaRestClient" as File
+project(':ClienteRestClient').projectDir = "$rootDir/modulos/ClienteRestClient" as File
+project(':Commons').projectDir = "$rootDir/modulos/Commons" as File
+project(':Tennant').projectDir = "$rootDir/modulos/Tennant" as File
